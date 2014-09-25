@@ -1,0 +1,51 @@
+Answers To The IPython Section - Jiayi Lu(jl6583)
+
+NOTICE:
+(Since I am using my own Mac OS X as the developing environment and I had installed Enthought Canopy and Python 3.4, the answer might be different from others, please see the attached command lines for more information!)
+
+1.
+Typing an object followed by '?' will get returned information about the object including which file the object are defined, command and result are shown in the following lines: 
+In [2]: import os
+
+In [3]: os.path.abspath?
+Type:        function
+String form: <function abspath at 0x1002e4aa0>
+File:        /Applications/Canopy.app/appdata/canopy-1.4.1.1975.macosx-x86_64/Canopy.app/Contents/lib/python2.7/posixpath.py
+Definition:  os.path.abspath(path)
+Docstring:   Return an absolute path.
+
+2.
+ls /etc/ | wc -l
+88 (don’t forget to post a screenshot)
+
+3. 
+Below are command lines and results:
+
+import math
+In [6]: math.sqrt(88)
+Out[6]: 9.38083151964686
+
+4.
+The results of executing the %timeit command on each operations are shown below:
+
+In [8]: %timeit x**2
+10000000 loops, best of 3: 73.2 ns per loop
+In [9]: %timeit x*x
+10000000 loops, best of 3: 62.8 ns per loop
+In [12]: %timeit numpy.square(x)
+1000000 loops, best of 3: 1.71 µs per loop
+
+It is obvious that x*x is the fastest
+
+5.
+In [20]: %lsmagic
+Out[20]: 
+Available line magics:
+%alias  %alias_magic  %autocall  %autoindent  %automagic  %bookmark  %cat  %cd  %clear  %colors  %config  %cp  %cpaste  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %install_default_config  %install_ext  %install_profiles  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %paste  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+
+According to out[20], there are 25 available cell magics

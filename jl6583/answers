@@ -15,8 +15,56 @@ Definition:  os.path.abspath(path)
 Docstring:   Return an absolute path.
 
 2.
-ls /etc/ | wc -l
-88 (don’t forget to post a screenshot)
+!ls /etc/ | wc -l
+88 
+
+#Here are what appeared on my screen when executing ls /etc/, there are 81 files total:
+172-26-112-245:~ luchristopher$ ls /etc
+afpovertcp.cfg				nanorc
+aliases					networks
+aliases.db				newsyslog.conf
+apache2					newsyslog.d
+asl					nfs.conf
+asl.conf				notify.conf
+auto_home				ntp-restrict.conf
+auto_master				ntp.conf
+autofs.conf				ntp_opendirectory.conf
+bashrc					openldap
+com.apple.screensharing.agent.launchd	pam.d
+csh.cshrc				passwd
+csh.login				paths
+csh.logout				paths.d
+cups					paths.save
+defaults				periodic
+dnsextd.conf				pf.anchors
+efax.rc					pf.conf
+emond.d					pf.os
+find.codes				php-fpm.conf.default
+fstab.hd				php.ini.default
+ftpd.conf				postfix
+ftpd.conf.default			ppp
+ftpusers				profile
+gettytab				protocols
+group					racoon
+hostconfig				rc.common
+hosts					rc.imaging
+hosts.equiv				rc.netboot
+ip6addrctl.conf				resolv.conf
+irbrc					rmtab
+kern_loader.conf			rpc
+krb5.keytab				rtadvd.conf
+localtime				security
+locate.rc				services
+mach_init.d				shells
+mach_init_per_login_session.d		snmp
+mach_init_per_user.d			ssh_config
+mail.rc					sshd_config
+man.conf				sudoers
+manpaths				syslog.conf
+manpaths.d				ttys
+master.passwd				xtab
+moduli					zshenv
+
 
 3. 
 Below are command lines and results:
